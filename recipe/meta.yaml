@@ -11,8 +11,8 @@ source:
   sha256: 3019e73b6ea93ea41113fa6aab268ff1e76c706c2b5fea6a9a033b177e30fbbf
 
 build:
-  number: 0
-  skip: true  # [not linux]
+  number: 1
+  noarch: generic
   script:
     - cp -rv lib $PREFIX
 
