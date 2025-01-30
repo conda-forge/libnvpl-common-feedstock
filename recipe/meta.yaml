@@ -1,5 +1,4 @@
-
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set arm_variant_type = "sbsa" %}
 
 package:
@@ -8,10 +7,10 @@ package:
 
 source:
   url: https://developer.download.nvidia.com/compute/nvpl/redist/nvpl_common/linux-sbsa/nvpl_common-linux-sbsa-{{ version }}-archive.tar.xz
-  sha256: 3019e73b6ea93ea41113fa6aab268ff1e76c706c2b5fea6a9a033b177e30fbbf
+  sha256: 8a516d983a5e6ddc299aacaccc7992c3028e1abbd020a47ffcdb0219187e41b6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   script:
     - cp -rv lib $PREFIX
@@ -34,17 +33,11 @@ about:
   license_file: LICENSE
   license_url: https://docs.nvidia.com/nvpl/license.html
   summary: >-
-    The NVIDIA Performance Libraries (NVPL) are a collection of high
-    performance mathematical libraries optimized for the NVIDIA Grace Armv9.0
-    architecture.
+    The NVIDIA Performance Libraries (NVPL) are a collection of high performance mathematical libraries optimized for the NVIDIA Grace Armv9.0 architecture.
   description: >-
-    The NVIDIA Performance Libraries (NVPL) are a collection of high
-    performance mathematical libraries optimized for the NVIDIA Grace Armv9.0
-    architecture.
+    The NVIDIA Performance Libraries (NVPL) are a collection of high performance mathematical libraries optimized for the NVIDIA Grace Armv9.0 architecture.
 
-    These CPU-only libraries have no dependencies on CUDA or CTK, and are drop
-    in replacements for standard C and Fortran mathematical APIs allowing HPC
-    applications to achieve maximum performance on the Grace platform.
+    These CPU-only libraries have no dependencies on CUDA or CTK, and are drop in replacements for standard C and Fortran mathematical APIs allowing HPC applications to achieve maximum performance on the Grace platform.
   doc_url: https://docs.nvidia.com/nvpl/
 
 extra:
