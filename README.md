@@ -37,14 +37,14 @@ Current release info
 Installing libnvpl-common
 =========================
 
-Installing `libnvpl-common` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `libnvpl-common` from the `conda-forge/label/nvpl_rc` channel can be achieved by adding `conda-forge/label/nvpl_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/nvpl_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `libnvpl-common-dev` can be installed with `conda`:
+Once the `conda-forge/label/nvpl_rc` channel has been enabled, `libnvpl-common-dev` can be installed with `conda`:
 
 ```
 conda install libnvpl-common-dev
@@ -59,26 +59,26 @@ mamba install libnvpl-common-dev
 It is possible to list all of the versions of `libnvpl-common-dev` available on your platform with `conda`:
 
 ```
-conda search libnvpl-common-dev --channel conda-forge
+conda search libnvpl-common-dev --channel conda-forge/label/nvpl_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search libnvpl-common-dev --channel conda-forge
+mamba search libnvpl-common-dev --channel conda-forge/label/nvpl_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search libnvpl-common-dev --channel conda-forge
+mamba repoquery search libnvpl-common-dev --channel conda-forge/label/nvpl_rc
 
 # List packages depending on `libnvpl-common-dev`:
-mamba repoquery whoneeds libnvpl-common-dev --channel conda-forge
+mamba repoquery whoneeds libnvpl-common-dev --channel conda-forge/label/nvpl_rc
 
 # List dependencies of `libnvpl-common-dev`:
-mamba repoquery depends libnvpl-common-dev --channel conda-forge
+mamba repoquery depends libnvpl-common-dev --channel conda-forge/label/nvpl_rc
 ```
 
 
