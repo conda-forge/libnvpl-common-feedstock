@@ -10,10 +10,11 @@ source:
   sha256: 8a516d983a5e6ddc299aacaccc7992c3028e1abbd020a47ffcdb0219187e41b6
 
 build:
-  number: 1
+  number: 2
   noarch: generic
   script:
     - cp -rv lib $PREFIX
+    - check-glibc "$PREFIX"/lib*/*.so.* "$PREFIX"/bin/* "$PREFIX"/targets/*/lib*/*.so.* "$PREFIX"/targets/*/bin/*  # [linux]
 
 requirements:
   host:
@@ -33,17 +34,11 @@ about:
   license_file: LICENSE
   license_url: https://docs.nvidia.com/nvpl/license.html
   summary: >-
-    The NVIDIA Performance Libraries (NVPL) are a collection of high
-    performance mathematical libraries optimized for the NVIDIA Grace Armv9.0
-    architecture.
+    The NVIDIA Performance Libraries (NVPL) are a collection of high performance mathematical libraries optimized for the NVIDIA Grace Armv9.0 architecture.
   description: >-
-    The NVIDIA Performance Libraries (NVPL) are a collection of high
-    performance mathematical libraries optimized for the NVIDIA Grace Armv9.0
-    architecture.
+    The NVIDIA Performance Libraries (NVPL) are a collection of high performance mathematical libraries optimized for the NVIDIA Grace Armv9.0 architecture.
 
-    These CPU-only libraries have no dependencies on CUDA or CTK, and are drop
-    in replacements for standard C and Fortran mathematical APIs allowing HPC
-    applications to achieve maximum performance on the Grace platform.
+    These CPU-only libraries have no dependencies on CUDA or CTK, and are drop in replacements for standard C and Fortran mathematical APIs allowing HPC applications to achieve maximum performance on the Grace platform.
   doc_url: https://docs.nvidia.com/nvpl/
 
 extra:
