@@ -6,3 +6,7 @@ conda_build:
 conda_forge_output_validation: true
 bot:
   check_solvable: true
+  version_updates:
+    nvidia:
+      compute_subdir: nvpl
+      json_name: nvpl_common
