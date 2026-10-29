@@ -1,4 +1,4 @@
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 {% set arm_variant_type = "sbsa" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://developer.download.nvidia.com/compute/nvpl/redist/nvpl_common/linux-sbsa/nvpl_common-linux-sbsa-{{ version }}-archive.tar.xz
-  sha256: 346d2137620114e7692bb78855a585d24bad300d77522f0f161e8c6e439c62e1
+  sha256: 9438944a671489785416d4203e1e8cd9cb20ad1be7afc96d6d242bbcb6be1923
 
 build:
   number: 0
